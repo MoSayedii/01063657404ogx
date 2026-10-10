@@ -1,0 +1,237 @@
+<!DOCTYPE html><html lang="ar" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><title>اختبار الجدارات السلوكية - معلم مساعد</title>
+<style>
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);--bg:#f6f7f9;--c:#fff;--t:#1b1f24;--m:#667;--a:#0f6e56;--b:#dde}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#15181c;--c:#1f242a;--t:#eceff2;--m:#9aa;--a:#3ec9a0;--b:#333a42}}
+:root[data-theme="dark"]{--bg:#15181c;--c:#1f242a;--t:#eceff2;--m:#9aa;--a:#3ec9a0;--b:#333a42}
+body{margin:0;background:var(--bg);color:var(--t);font-family:system-ui,"Segoe UI",Tahoma,sans-serif;line-height:1.7}
+main{max-width:700px;margin:auto;padding:12px}
+#bar{position:sticky;top:env(safe-area-inset-top,0px);background:var(--c);border:1px solid var(--b);border-radius:10px;padding:8px 12px;display:flex;justify-content:space-between;font-weight:700;z-index:2}
+h2{font-size:16px;color:var(--a);margin:22px 0 6px}
+.q{background:var(--c);border:1px solid var(--b);border-radius:10px;padding:10px 12px;margin:8px 0}
+.q p{margin:0 0 6px;font-weight:600}
+label{display:block;padding:5px 4px;cursor:pointer}
+button{background:var(--a);color:#fff;border:0;border-radius:10px;padding:12px;width:100%;font-size:16px;margin:16px 0}
+#res{display:none;background:var(--c);border:1px solid var(--b);border-radius:10px;padding:14px;text-align:center}
+.big{font-size:34px;font-weight:800;color:var(--a)}
+.logo{text-align:center;margin:10px 0 4px}.logo b{display:inline-block;font-size:44px;font-weight:900;color:#fff;background:linear-gradient(135deg,#0f6e56,#2bb58c);padding:2px 26px 8px;border-radius:18px;line-height:1.4;letter-spacing:1px}.logo small{display:block;color:var(--m);margin-top:6px;font-size:14px}.by{text-align:center;font-weight:700;margin:6px 0 14px}.wa{display:flex;align-items:center;justify-content:center;gap:8px;background:#25d366;color:#fff;text-decoration:none;border-radius:10px;padding:12px;font-size:16px;font-weight:700;margin:10px 0}.fwa{position:fixed;left:14px;bottom:calc(14px + env(safe-area-inset-bottom,0px));width:54px;height:54px;border-radius:50%;background:#25d366;color:#fff;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:800;text-decoration:none;box-shadow:0 3px 10px rgba(0,0,0,.3);z-index:3}
+.card{background:var(--c);border:1px solid var(--b);border-radius:16px;padding:18px;box-shadow:0 4px 16px rgba(0,0,0,.07);margin:10px 0}
+.card h1{font-size:20px;margin-top:0}.card li{margin:6px 0}
+.pri,.sec{flex:1;width:auto;margin:0}.pri:disabled{opacity:.35}
+.sec{background:transparent;color:var(--a);border:2px solid var(--a)}
+#nav{display:flex;gap:10px;margin:12px 0}
+.pg{height:8px;background:var(--b);border-radius:8px;overflow:hidden;margin:10px 0}.pg i{display:block;height:100%;background:var(--a);width:0;transition:width .3s}
+#sec{color:var(--a);font-size:13px;font-weight:700}
+#qt{font-size:20px;font-weight:700;line-height:1.9;margin:10px 0 16px}
+.o{display:block;width:100%;text-align:right;background:var(--bg);color:var(--t);border:2px solid var(--b);border-radius:12px;padding:13px 14px;margin:8px 0;font-size:16px}
+.o.on{border-color:var(--a);background:var(--a);color:#fff;font-weight:700}
+.tr{display:flex;align-items:center;gap:8px;margin:8px 0;text-align:right;font-size:14px}.tr span{flex:0 0 46%}.tr em{flex:1;height:10px;background:var(--b);border-radius:8px;overflow:hidden}.tr em i{display:block;height:100%}.tr b{flex:0 0 40px;font-size:13px}
+.vd{border-radius:12px;padding:12px;margin:12px 0;font-weight:700;text-align:right}.g{background:#e3f6ec;color:#0a5a3c}.y{background:#fff3d6;color:#7a5200}.r{background:#fde4e4;color:#8a1c1c}
+.nt{font-size:13px;color:var(--m);text-align:right;font-weight:400}
+.rf{display:flex;gap:8px;margin:10px 0}.rf button{margin:0;padding:8px;font-size:14px;background:var(--bg);color:var(--t);border:1px solid var(--b)}.rf button.on{background:var(--a);color:#fff}
+.ri{text-align:right;border-right:5px solid var(--b);background:var(--bg);border-radius:8px;padding:8px 10px;margin:8px 0;font-size:14px}.ri.ok{border-color:#1fa971}.ri.md{border-color:#e0a100}.ri.bd{border-color:#d33}
+.ri p{margin:0 0 4px;font-weight:700}
+</style></head><body><main>
+<div class="logo"><b>ببساطة</b><small>صفحة ببساطة التعليمية</small></div><div class="by">مقدم من صفحة ببساطة<br>إعداد: مستر محمد سيد &amp; مس نورهان إبراهيم</div><div id="intro" class="card"><h1>اختبار الجدارات السلوكية – معلم مساعد</h1><ul><li>عدد الأسئلة: 160 سؤال</li><li>مدة الاختبار: 20 دقيقة</li><li>سؤال واحد في كل صفحة: اختر إجابتك ثم اضغط «التالي»</li></ul><button class="pri" id="st" style="width:100%">ابدأ الاختبار</button></div>
+<div id="ex" style="display:none"><div id="bar"><span id="cnt"></span><span id="tm">20:00</span></div><div class="pg"><i id="pb"></i></div><div class="card"><div id="sec"></div><p id="qt"></p><div id="op"></div></div><div id="nav"><button id="pv" class="sec">السابق</button><button id="nx" class="pri">التالي</button></div></div>
+<div id="res"></div>
+<a class="wa" href="https://wa.me/201505191893" target="_blank" rel="noopener">تواصل معنا على واتساب: 01505191893</a><div class="by" style="color:var(--m);font-weight:400">ببساطة © إعداد مستر محمد سيد &amp; مس نورهان إبراهيم</div></main><a class="fwa" href="https://wa.me/201505191893" target="_blank" rel="noopener">واتساب</a>
+<script>
+const S=[
+["أوافق بشدة","أوافق","محايد","لا أوافق","لا أوافق بشدة"],
+["ينطبق تماماً","ينطبق إلى حد ما","محايد","لا ينطبق إلى حد ما","لا ينطبق تماماً"],
+["دائماً","غالباً","أحياناً","نادراً","أبداً"]];
+// "~" = عبارة سلبية (تُحتسب بالعكس)
+const Q=[[
+"أحرص على الانضباط في مواعيد الحضور والانصراف.",
+"~أفضل إنجاز المهام وحدي دون الاعتماد على الزملاء.",
+"أتقبل ملاحظات المشرف وأعدل أدائي فوراً.",
+"~أرجع للمسؤول فوراً عند أي مشكلة بدلاً من حلها.",
+"أحافظ على هدوئي أمام ولي الأمر الغاضب.",
+"أسعى لتطوير مهاراتي التدريسية دون طلب من الإدارة.",
+"~أجد صعوبة في تقبل التغييرات المفاجئة في العمل.",
+"أبلغ رئيسي فوراً إذا اكتشفت خطأ ارتكبته.",
+"أعامل جميع الطلاب بعدل دون تمييز.",
+"~أرى أن تبادل الخبرات بين الزملاء غير ضروري.",
+"أتحمل مسؤولية نتائج عملي كاملة.",
+"أنجز مهامي في الموعد حتى تحت الضغط.",
+"أحترم القوانين واللوائح حتى لو لم يراقبني أحد.",
+"~ألقي اللوم على الآخرين عند حدوث تقصير.",
+"أنظم وقتي بين الشرح والتقويم والمتابعة.",
+"أستمع لرأي زملائي قبل إبداء رأيي النهائي.",
+"~أتجنب المهام الجديدة خوفاً من الفشل.",
+"أرى أن سمعة المدرسة مسؤولية الجميع.",
+"أتعامل بحزم ولطف مع الطالب المشاغب.",
+"~لا أهتم بالتحضير المسبق للدرس.",
+"أتعلم من أخطائي وأتجنب تكرارها.",
+"أساعد زميلي الجديد على الاندماج في العمل.",
+"~أقبل الهدايا من أولياء الأمور مقابل مزايا للطالب.",
+"أحافظ على سرية بيانات الطلاب.",
+"أتقبل النقد دون انفعال.",
+"~أترك عملي غير مكتمل إذا شعرت بالملل.",
+"أضع أهدافاً واضحة لكل حصة.",
+"أشارك في الأنشطة المدرسية بحماس.",
+"~أؤجل المهام الصعبة إلى آخر لحظة.",
+"أستخدم التكنولوجيا لتحسين شرح الدروس.",
+"أتعاون مع الأسرة لحل مشكلات الطالب.",
+"~أتصرف بعصبية عند اختلاف الرأي مع زميل.",
+"أقدم المصلحة العامة على مصلحتي الشخصية.",
+"أبادر باقتراح حلول لتحسين بيئة المدرسة.",
+"~أعتمد على التعليمات في كل خطوة صغيرة.",
+"أحرص على أن أكون قدوة حسنة للطلاب.",
+"أراجع نتائج الطلاب لتحديد نقاط ضعفهم.",
+"~أرفض تكليفي بمهام خارج جدولي مطلقاً.",
+"أتقبل اختلاف ثقافات وآراء الآخرين.",
+"أوازن بين المرونة والالتزام بالقواعد.",
+"~أتغيب دون عذر إذا لم تكن هناك رقابة.",
+"أحترم وقت الآخرين وأحضر الاجتماعات في موعدها.",
+"أصبر على الطالب بطيء الفهم.",
+"~أفضل الحلول السريعة على حساب الجودة.",
+"أتحمل ضغط العمل دون التأثير على أدائي.",
+"أحافظ على ممتلكات المدرسة وأدواتها.",
+"~أسخر من أخطاء الطلاب أمام زملائهم.",
+"أعترف بخطئي دون تبرير.",
+"أخطط لعملي أسبوعياً.",
+"~أشعر أن التدريب والتطوير مضيعة للوقت.",
+"أتعامل بروح الفريق في المهام المشتركة.",
+"أدعم قرارات الإدارة بعد صدورها حتى لو خالفت رأيي.",
+"أرد على الاستفسارات بوضوح وأدب.",
+"~أتهرب من المهام التي لا تُقيَّم عليها."
+],[
+"أراجع تفاصيل مهامي قبل تسليمها لضمان خلوها من الأخطاء.",
+"~أجد صعوبة في التكيف مع تغير المواعيد النهائية.",
+"أستمع جيداً لزملائي قبل إبداء رأيي.",
+"~أفضل الاعتماد على التعليمات الجاهزة وأتجنب القرارات الفردية.",
+"ألتزم بمواعيد العمل الرسمية.",
+"~أتوتر بسرعة أمام المشكلات المعقدة.",
+"أبادر بمساعدة أي زميل جديد.",
+"~أهتم بالكم على حساب جودة العمل وقت الضغط.",
+"أتقبل التوجيهات النقدية وأعدل سلبياتي فوراً.",
+"~أرى تبادل الخبرات غير ضروري ما دمت أنجز مهمتي.",
+"أحافظ على نظافة وترتيب الفصل.",
+"أتعامل بصدق مع الطلاب وأولياء الأمور.",
+"~أتجاهل الشكاوى المقدمة من أولياء الأمور.",
+"أنوع في أساليب الشرح لتناسب الطلاب.",
+"أتقبل الأعمال الإضافية عند الحاجة.",
+"~أتأخر في تسليم الكشوف والتقارير.",
+"أتحكم في انفعالي في المواقف الصعبة.",
+"أحترم رأي الأغلبية في الفريق.",
+"~أرفض التعاون مع زملاء لا أرتاح إليهم.",
+"أبحث عن المعلومة الصحيحة قبل أن أجيب.",
+"أعد خطة بديلة إذا فشلت خطتي الأولى.",
+"~أنقل أخطاء زملائي للإدارة بغرض الإيقاع بهم.",
+"أحرص على تقييم نفسي بموضوعية.",
+"أنجز ما يُطلب مني دون تذكير.",
+"~أقاوم أي تغيير في أسلوب التدريس.",
+"أتقبل التكليف بغض النظر عن الجهة المكلِّفة.",
+"أحافظ على أسرار الزملاء.",
+"~أستخدم هاتفي أثناء الحصة لأغراض شخصية.",
+"أتابع كل جديد في مجال تخصصي.",
+"أراعي الفروق الفردية بين الطلاب.",
+"~أعتبر الطالب الضعيف عبئاً علي.",
+"أتعامل مع الأزمات بتفكير هادئ.",
+"أحدد أولوياتي قبل البدء بالعمل.",
+"~أترك زملائي يتحملون المهام الصعبة.",
+"أتواصل بوضوح وبلغة سليمة.",
+"أشجع الطلاب على طرح الأسئلة.",
+"~أشعر بالإحباط سريعاً عند الفشل.",
+"أتقبل الاعتذار وأسامح عند الخطأ.",
+"أضع مصلحة الطلاب فوق راحتي.",
+"~أتجاوز التعليمات إذا رأيتها غير مفيدة.",
+"أوثق عملي وأحتفظ بسجلاتي منظمة.",
+"أحترم التسلسل الوظيفي في الإدارة.",
+"~أتحدث بصوت عالٍ ونبرة حادة مع الطلاب.",
+"أستفيد من وقت الفراغ في عمل مفيد.",
+"أتعاون مع الإدارة في تنفيذ القرارات.",
+"~أعتذر عن المشاركة في أي نشاط إضافي.",
+"أقبل التوجيه من زميل أكثر خبرة.",
+"أتمتع بالصبر في مواقف التكرار والشرح.",
+"أحرص على سلامة الطلاب في كل الأوقات.",
+"~أتعامل بلامبالاة مع تعليمات السلامة.",
+"أُظهر الاحترام لجميع العاملين بالمدرسة.",
+"أنفذ التكليفات بدقة وفق التعليمات.",
+"~أتعامل بلا اهتمام مع ملاحظات الإدارة."
+],[
+"أراجع إنجازاتي اليومية وأرتب أولوياتي قبل المغادرة.",
+"~أفقد هدوئي عند الاختلاف مع زميل.",
+"أبادر باقتراح حلول مبتكرة لتسهيل الإجراءات.",
+"~أتأخر في تسليم المهام بسبب كثرة المقاطعات.",
+"أتعاون بفعالية مع زملائي في المهام المشتركة.",
+"~أعتمد على توجيهات رئيسي في كل خطوة صغيرة.",
+"ألتزم بالسرية المهنية للبيانات الرسمية.",
+"~أشعر بقلق شديد عند تكليفي بمهام غير مألوفة.",
+"أستمع باهتمام لشكاوى أولياء الأمور وأحلها بهدوء.",
+"~أؤجل المهام الصعبة إلى وقت لاحق.",
+"أبدأ يومي بخطة واضحة.",
+"أحضر قبل الموعد المحدد بوقت كافٍ.",
+"~أُخفي أخطائي عن المسؤول.",
+"أشجع زملائي عند نجاحهم.",
+"أحضر الدرس بشكل جيد قبل الحصة.",
+"~أنفعل على الطلاب عند ازدحام الفصل.",
+"أحل المشكلات بالحوار.",
+"أطلب المساعدة عندما أحتاجها.",
+"~أتجنب المسؤولية عند وقوع خطأ جماعي.",
+"أحرص على التعلم الذاتي.",
+"أحترم اختلاف الآراء داخل الفريق.",
+"~أتحدث عن زملائي في غيابهم بسوء.",
+"أنهي ما بدأته مهما كانت الصعوبات.",
+"أستخدم أساليب تحفيز متنوعة مع الطلاب.",
+"~أتساهل في تطبيق اللوائح مع المقربين.",
+"أتابع تقدم الطلاب باستمرار.",
+"أحافظ على تعابير مهذبة في كل المواقف.",
+"~أقاطع الآخرين أثناء حديثهم.",
+"أبحث عن أسباب المشكلة قبل الحكم.",
+"أرحب بأي مهمة جديدة تفيد العمل.",
+"~أشعر أن عملي أقل من مستواي فلا أبذل جهداً.",
+"أتعامل مع الضغط بتنظيم وهدوء.",
+"أنقل المعلومات للزملاء بوضوح ودقة.",
+"~أتغاضى عن مخالفات الطلاب لتجنب المشكلات.",
+"أحترم ملكية الآخرين لأفكارهم.",
+"أتقبل نتائج التقييم بروح رياضية.",
+"~أنسب لنفسي جهد غيري.",
+"أبذل جهداً إضافياً عند الحاجة.",
+"أتحدث مع الطالب بهدوء لحل سلوكه الخاطئ.",
+"~أتجاهل البريد والتعليمات الرسمية.",
+"أحرص على تنويع أدواتي التعليمية.",
+"أراعي مشاعر الآخرين في حديثي.",
+"~أرى أن التخطيط مضيعة للوقت.",
+"أحافظ على مظهري المهني.",
+"أشارك في اجتماعات المدرسة بفاعلية.",
+"~أتجنب مواجهة المشكلات وأتركها تتفاقم.",
+"أتأكد من فهم الطلاب قبل الانتقال لنقطة جديدة.",
+"أفي بوعودي لزملائي وطلابي.",
+"~أتأثر بالضغوط فيتراجع مستوى أدائي.",
+"أحترم الوقت المخصص لكل نشاط.",
+"أطور أسلوبي بناءً على آراء الطلاب.",
+"أحافظ على الهدوء أمام الأخطاء المتكررة.",
+"~أتساهل في الالتزام بالجدول الزمني للمنهج."
+]];
+const T=["الجزء الأول: أوافق / لا أوافق","الجزء الثاني: ينطبق / لا ينطبق","الجزء الثالث: دائماً / أحياناً / أبداً"];
+const $=id=>document.getElementById(id);
+const A=[];Q.forEach((g,i)=>g.forEach(t=>{const r=t[0]==="~";A.push({r,s:i,t:r?t.slice(1):t,v:null})}));
+const n=A.length;let c=0,left=1200,tick,done=false;
+function show(){const q=A[c];$('sec').textContent=T[q.s];$('qt').textContent=(c+1)+". "+q.t;$('cnt').textContent="السؤال "+(c+1)+" / "+n;$('pb').style.width=((c+1)/n*100)+"%";
+$('op').innerHTML=S[q.s].map((o,k)=>`<button class="o${q.v===k?' on':''}" data-k="${k}">${o}</button>`).join('');
+$('pv').style.visibility=c?'visible':'hidden';$('nx').textContent=c==n-1?'إنهاء الاختبار':'التالي';$('nx').disabled=q.v===null}
+$('op').onclick=e=>{const b=e.target.closest('.o');if(!b)return;A[c].v=+b.dataset.k;show()};
+$('nx').onclick=()=>{if(c==n-1)fin();else{c++;show();scrollTo(0,0)}};
+$('pv').onclick=()=>{c--;show();scrollTo(0,0)};
+$('st').onclick=()=>{$('intro').style.display='none';$('ex').style.display='block';show();
+tick=setInterval(()=>{left--;$('tm').textContent=String(Math.floor(left/60)).padStart(2,'0')+":"+String(left%60).padStart(2,'0');if(left<=0)fin()},1000)};
+const TN=["الاتزان الانفعالي وتحمل الضغط","الانضباط وإدارة الوقت","التعامل مع الطلاب وأولياء الأمور","العمل الجماعي والتواصل","المرونة والتطوير والمبادرة","المسؤولية والنزاهة والالتزام"];
+const TX=[/انفعال|هدوء|توتر|قلق|عصب|إحباط|ضغط|ضغوط|أزمات|أفقد|نبرة|أسخر/,/وقت|مواعيد|أؤجل|أولويات|أخطط|التخطيط|خطة|حضور|الحضور|أتأخر|الموعد|أتغيب|المقاطعات|اليومية|أنظم/,/طالب|الطلاب|ولي|أولياء|الفصل|الشكاوى/,/زميل|زملاء|الفريق|تعاون|أتعاون|الجماعي|الإدارة|المشرف|رئيس|التسلسل|الاجتماعات|الخبرات|الآخرين/,/تطوير|أتعلم|تعلم|جديد|التغيير|تغيير|تدريب|التكنولوجيا|مبتكر|حلول|أقترح|أبادر|إضافي|خارج/];
+const TP=["درّب نفسك على التنفس والهدوء وتأجيل الرد وقت الانفعال.","التزم بجدول يومي واكتب أولوياتك قبل البدء.","تدرّب على الصبر والإنصات والحزم الهادئ مع الطلاب وأولياء الأمور.","اعمل على الإنصات وتبادل الخبرات ودعم الزملاء.","اقبل التغيير وبادر بتجربة أساليب تدريس جديدة.","التزم باللوائح وتحمّل مسؤولية أخطائك بوضوح وحافظ على السرية."];
+const kind=t=>{const k=TX.findIndex(x=>x.test(t));return k<0?5:k};
+const lvl=p=>p>=75?['g','ممتاز']:p>=60?['y','متوسط']:['r','يحتاج تنمية'];
+function fin(){if(done)return;done=true;clearInterval(tick);let sc=0,ans=0;const TR=TN.map(()=>[0,0]);
+A.forEach(q=>{q.k=kind(q.t);q.p=q.v===null?0:(q.r?q.v+1:5-q.v);if(q.v!==null)ans++;sc+=q.p;TR[q.k][0]+=q.p;TR[q.k][1]+=5});
+const p=Math.round(sc/(n*5)*100);
+const vd=p>=75?['g','النتيجة العامة: سماتك الشخصية مناسبة لوظيفة معلم مساعد في المدرسة.']:p>=60?['y','النتيجة العامة: مناسب بدرجة متوسطة، ويحتاج إلى تنمية بعض السمات قبل الاختبار الفعلي.']:['r','النتيجة العامة: غير مناسب حالياً لوظيفة معلم مساعد، راجع السمات الضعيفة وأعد المحاولة.'];
+const rows=TR.map((t,i)=>{const v=t[1]?Math.round(t[0]/t[1]*100):0,l=lvl(v),col={g:'#1fa971',y:'#e0a100',r:'#d33'}[l[0]];return t[1]?`<div class="tr"><span>${TN[i]}</span><em><i style="width:${v}%;background:${col}"></i></em><b>${v}%</b></div>`:''}).join('');
+const tips=TR.map((t,i)=>t[1]&&Math.round(t[0]/t[1]*100)<75?`<li>${TN[i]}: ${TP[i]}</li>`:'').join('');
+$('ex').style.display='none';const r=$('res');r.style.display="block";
+r.innerHTML=`<div class="big">${p}%</div><div style="color:var(--m)">أجبت على ${ans} من ${n} سؤال</div><div class="vd ${vd[0]}">${vd[1]}</div><h2 style="text-align:right">تحليل السمات الشخصية</h2>${rows}${tips?`<h2 style="text-align:right">نصائح للتحسين</h2><ul style="text-align:right">${tips}</ul>`:''}<p class="nt">هذا الاختبار محاكاة تدريبية، وليس نتيجة رسمية من الجهاز المركزي للتنظيم والإدارة.</p><h2 style="text-align:right">مراجعة الإجابات والإجابة الأنسب</h2><div class="rf"><button class="on" data-f="all">الكل</button><button data-f="bad">الأخطاء فقط</button></div><div id="rv"></div><button class="pri" style="width:100%" onclick="location.reload()">إعادة الاختبار</button>`;
+const draw=f=>{$('rv').innerHTML=A.map((q,i)=>{if(f=='bad'&&q.p==5)return'';const c=q.p==5?'ok':q.p==4?'md':'bd';return`<div class="ri ${c}"><p>${i+1}. ${q.t}</p>إجابتك: ${q.v===null?'لم تُجب':S[q.s][q.v]}<br>الأنسب: <b>${q.r?S[q.s][4]:S[q.s][0]}</b></div>`}).join('')};draw('all');
+r.querySelector('.rf').onclick=e=>{const b=e.target.closest('button');if(!b)return;r.querySelectorAll('.rf button').forEach(x=>x.classList.toggle('on',x==b));draw(b.dataset.f)};
+scrollTo(0,0)}
+</script></body></html>
